@@ -1,0 +1,75 @@
+body{
+    background: #FC354C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #0ABFBC, #FC354C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #0ABFBC, #FC354C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+#footer {
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+ }
+
+li{
+    list-style-type: none;
+}
+
+.todoHeading {
+    background: #FFF4ED;
+    padding: 50px;
+    text-align: center;
+    background: #FC354C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #0ABFBC, #FC354C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #0ABFBC, #FC354C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+  }
+  .todoHeading h1 {
+    font-family: 'Righteous', cursive;
+    position: relative;
+    color: black; 
+    display: inline-block;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    font-size: 3em;
+    padding: 11px 60px;
+    margin: 0; 
+    line-height: 1;
+  }
+  .todoHeading h1:before, .todoHeading h1:after {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    width: 30px;
+    height: 100%;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    background: repeating-linear-gradient(135deg, transparent, transparent 2px, black 2px, black 4px);
+  }
+  .todoHeading h1:before {left: 0;}
+  .todoHeading h1:after {right: 0;}
+  @media (max-width: 420px) {
+    .todoHeading h1 {font-size: 2em;}
+  }
+
+.important{
+    color: red;
+}
+
+.todoAdd{
+
+}
+
+.todo{
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    position: left;
+}
+
+.todoList{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20em;
+}
