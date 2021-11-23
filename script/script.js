@@ -3,6 +3,7 @@ let newNote = document.querySelector('.newNote'),
     todo = document.querySelector('.todo');
 
 let todoList = [];
+
 if(localStorage.getItem('todo')){
     todoList = JSON.parse(localStorage.getItem('todo'));
     displayMessages();
@@ -15,7 +16,12 @@ addButton.addEventListener('click', function(){
         important: false
     }
 
-    todoList.push(newTodo);
+    if(newNote.value.indexOf('<') > -1 || newNote.value.indexOf('>') > -1){
+        alert('Запись не должна содержать символы < и >');
+    }else{
+        todoList.push(newTodo);
+    }
+    
     displayMessages();
     localStorage.setItem('todo', JSON.stringify(todoList));
 });
@@ -31,7 +37,6 @@ function displayMessages(){
         `;
         todo.innerHTML = displayMessage;
     })
-    
 }
 
 todo.addEventListener('change', function(event){
