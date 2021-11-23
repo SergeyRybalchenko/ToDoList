@@ -1,30 +1,28 @@
 body{
-    background: #FC354C;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #0ABFBC, #FC354C);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #0ABFBC, #FC354C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+  background: #DAE2F8;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #D6A4A4, #DAE2F8);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #D6A4A4, #DAE2F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
 }
 
 #footer {
-    position:fixed;
-    left:0px;
-    bottom:0px;
-    height:30px;
-    width:100%;
- }
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+}
 
 li{
     list-style-type: none;
 }
 
 .todoHeading {
-    background: #FFF4ED;
+   
     padding: 50px;
     text-align: center;
-    background: #FC354C;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #0ABFBC, #FC354C);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #0ABFBC, #FC354C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
   }
+
   .todoHeading h1 {
     font-family: 'Righteous', cursive;
     position: relative;
@@ -37,6 +35,7 @@ li{
     margin: 0; 
     line-height: 1;
   }
+
   .todoHeading h1:before, .todoHeading h1:after {
     content: ""; 
     position: absolute;
@@ -57,9 +56,6 @@ li{
     color: red;
 }
 
-.todoAdd{
-
-}
 
 .todo{
     font-family: Arial, sans-serif;
